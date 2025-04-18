@@ -1,12 +1,20 @@
 
 import { Carousel } from './Carousel'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import "../src/index.css"
+import { pdata } from './pdata'
+import { useEffect, useState } from 'react'
 export const Content = () => {
+    const [index, setIndex] = useState(0);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % pdata.length);
+        }, 3000);
+        return () => clearInterval(interval);
+    }, []);
     return (
-        <div className='h-[calc(120vh-10rem)] flex flex-col justify-center items-center -mt-15'>
-            <div className='text-[2rem] text-amber-900 font-black'>वडंग</div>
+        <div className='h-[calc(120vh-10rem)] flex flex-col justify-center items-center '>
             <div className='flex justify-center items-center  text-amber-900 mb-3'>
                 <div className='flex flex-col justify-center items-center'>
                     <div className='font-bold'>दिनांक वेळ</div>
@@ -40,7 +48,7 @@ export const Content = () => {
                                 मा. प्राचार्य तानसेन जगताप
                             </div>
                             <div className="text-[1rem] w-[20rem]">
-                                संस्थापक अध्यक्ष-म.सा.प.शाखा-४०गाव
+                                संस्थापक अध्यक्ष-म.सा.प.शाखा-चाळीसगाव
                             </div>
                         </div>
 
@@ -123,9 +131,25 @@ export const Content = () => {
 
                 </motion.div>
             </div>
-            <div className='flex flex-col justify-center items-center'>
-                <div className='text-amber-950 font-bold tiro-devanagari-marathi-regular-italic'>लेखक संजीव गिरास</div>
+            <div className='flex flex-col justify-center items-center mb-5'>
+                <div className='text-amber-950 font-bold tiro-devanagari-marathi-regular-italic mb-2'>लेखक संजीव गिरासे यांचे प्रकाशित पुस्तके </div>
                 <div><Carousel /></div>
+            </div>
+
+            <div className='border-[0.5rem] border-amber-950/60 w-[20rem] h-[16rem] mb-5'>
+                <div className="w-[19rem] h-[15rem] mx-auto overflow-hidden relative">
+                    <AnimatePresence>
+                        <motion.img
+                            key={pdata[index]}
+                            src={pdata[index]}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 1 }}
+                            className="absolute top-0 left-0 w-full h-full object-cover"
+                        />
+                    </AnimatePresence>
+                </div>
             </div>
         </div>
 
