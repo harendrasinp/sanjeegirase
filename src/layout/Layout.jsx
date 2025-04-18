@@ -21,8 +21,12 @@ export const Layout = ({ children }) => {
                 <Footer />
             </div>
             {toggle ? null
-                :<div className='flex justify-center items-center'>
+                :<div className='flex flex-col justify-center items-center gap-6'>
                     <button className='bg-amber-900 text-amber-50 rounded-[0.5rem] px-5 py-2' onClick={handlePlay}>Open</button>
+                    <div>
+                        <img className='w-[15rem] h-[20rem]' src="images/bapu/bapu2.jpg" alt="bapu" />
+                    </div>
+                    <div className='text-amber-950 font-bold'>डॉ. संजीव गीरासे</div>
                 </div>
             }
         </div>
