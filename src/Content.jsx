@@ -151,11 +151,12 @@ export const Content = () => {
                     </AnimatePresence>
                 </div>
             </div>
+            
             <div className='flex flex-col justify-center items-center mb-5'>
                 <div className='text-amber-950 font-semibold text-[1.2rem]'>Location</div>
-                <iframe className='w-[20rem] h-[10rem] border-[0.5rem] border-amber-800/80'
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.7594862080696!2d75.03222757061764!3d23.32448365852515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963ff7e14267539%3A0xe892ae4035c9365f!2sI.M.A.%20hall!5e0!3m2!1sen!2sin!4v1744996500397!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe className='w-[20rem] h-[10rem] border-[0.5rem] border-amber-800/80' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.2568261680917!2d74.7728171!3d20.901984499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdec5f3390aaeb7%3A0xe62611ce05413890!2sIndian%20Medical%20Association!5e0!3m2!1sen!2sin!4v1744998344307!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            
         </div>
 
     )
