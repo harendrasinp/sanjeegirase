@@ -10,4 +10,5 @@ export const pdata=[
     "/images/bapu/bp9.jpg",
     "/images/bapu/bp10.jpg",
     "/images/bapu/bp11.jpg",
+    "/images/bapu/bp12.jpg",
 ]
