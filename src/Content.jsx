@@ -14,7 +14,7 @@ export const Content = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <div className='h-[calc(180vh-10rem)] flex flex-col justify-center items-center '>
+        <div className='h-[calc(185vh-10rem)] flex flex-col justify-center items-center '>
             <div className='flex justify-center items-center  text-amber-900 mb-3'>
                 <div className='flex flex-col justify-center items-center'>
                     <div className='font-bold'>दिनांक वेळ</div>
