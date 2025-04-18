@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 export const Header = () => {
     return (
-        <div className='h-[10rem] flex flex-col justify-center items-center w-screen'>
+        <div className='h-[12rem] flex flex-col justify-center items-center w-screen'>
             <div className='flex  justify-center items-center'>
                 <img className='w-[3rem] h-[3rem]' src="images/bapu/bapu1.png" alt="bapupng" />
                 <motion.div className='text-amber-950 text-[1.2rem] font-bold'

@@ -5,12 +5,12 @@ import "../src/index.css"
 export const Content = () => {
 
     return (
-        <div className='h-[calc(120vh-10rem)] flex flex-col justify-center items-center '>
+        <div className='h-[calc(120vh-10rem)] flex flex-col justify-center items-center -mt-15'>
             <div className='text-[2rem] text-amber-900 font-black'>वडंग</div>
             <div className='flex justify-center items-center  text-amber-900 mb-3'>
                 <div className='flex flex-col justify-center items-center'>
                     <div className='font-bold'>दिनांक वेळ</div>
-                    <div>रविवार,२० एप्रिल २०२५</div>
+                    <div className='border-b-2 border-amber-950'>रविवार,२० एप्रिल २०२५</div>
                 </div>
             </div>
             <div className='overflow-hidden h-[15rem] w-screen flex justify-center items-center relative mb-6'>
