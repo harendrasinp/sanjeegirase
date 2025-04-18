@@ -14,7 +14,7 @@ export const Content = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <div className='h-[calc(120vh-10rem)] flex flex-col justify-center items-center '>
+        <div className='h-[calc(166vh-10rem)] flex flex-col justify-center items-center '>
             <div className='flex justify-center items-center  text-amber-900 mb-3'>
                 <div className='flex flex-col justify-center items-center'>
                     <div className='font-bold'>दिनांक वेळ</div>
@@ -150,6 +150,11 @@ export const Content = () => {
                         />
                     </AnimatePresence>
                 </div>
+            </div>
+            <div className='flex flex-col justify-center items-center mb-5'>
+                <div className='text-amber-950 font-semibold text-[1.2rem]'>Location</div>
+                <iframe className='w-[20rem] h-[10rem] border-[0.5rem] border-amber-800/80'
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.7594862080696!2d75.03222757061764!3d23.32448365852515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963ff7e14267539%3A0xe892ae4035c9365f!2sI.M.A.%20hall!5e0!3m2!1sen!2sin!4v1744996500397!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
