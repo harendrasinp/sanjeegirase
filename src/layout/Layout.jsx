@@ -11,8 +11,8 @@ export const Layout = ({ children }) => {
         setToogle(true)
     };
     return (
-        <div className=' flex flex-col gap-6'>
-            <div className={`bg-[url(/images/bg/background.jpg)] bg-fixed bg-cover bg-no-repeat bg-center overflow-y-hidden ${toggle ? "animation" : "h-[10rem]"}`}>
+        <div className=' flex flex-col'>
+            <div className={`bg-[url(/images/bg/background.jpg)] bg-fixed bg-cover bg-no-repeat bg-center overflow-y-hidden ${toggle ? "animation" : "h-[11rem]"}`}>
                 <audio ref={musicRef} src="music/backmusic.mp3"></audio>
                 <Header />
                 <main>
