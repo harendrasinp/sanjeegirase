@@ -1,0 +1,15 @@
+export const bookdata=[
+        "/images/books/b1.jpg",
+        "/images/books/b2.jpg",
+        "/images/books/b3.jpg",
+        "/images/books/b4.jpg",
+        "/images/books/b5.jpg",
+        "/images/books/b6.jpg",
+        "/images/books/b7.jpg",
+        "/images/books/b8.jpg",
+        "/images/books/b9.jpg",
+        "/images/books/b10.jpg",
+        "/images/books/b11.jpg",
+        "/images/books/b12.jpg",
+        "/images/books/b13.jpg",
+]
