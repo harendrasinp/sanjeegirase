@@ -136,7 +136,7 @@ export const Content = () => {
                 <div><Carousel /></div>
             </div>
 
-            <div className='border-[0.5rem] border-amber-950/60 w-[20rem] h-[16rem] mb-5'>
+            <div className='border-[0.5rem] rounded-[0.2rem] border-amber-950/60 w-[20rem] h-[16rem] mb-5 shadow-2xl shadow-amber-950'>
                 <div className="w-[19rem] h-[15rem] mx-auto overflow-hidden relative">
                     <AnimatePresence>
                         <motion.img
