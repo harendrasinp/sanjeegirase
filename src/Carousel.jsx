@@ -13,7 +13,7 @@ export const Carousel = () => {
         autoplay: true,
     };
     return (
-        <div className='w-[13rem] h-[15rem] border-[0.5rem]  border-amber-900'>
+        <div className='w-[13rem] h-[15rem] border-[0.5rem] shadow-2xl shadow-amber-950  border-amber-950/70 rounded-[0.2rem]'>
             <Slider {...settings} >
                 {bookdata.map((books, index) => (
                     <div className='w-[13rem] '>
