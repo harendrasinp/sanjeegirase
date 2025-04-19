@@ -21,12 +21,12 @@ export const Layout = ({ children }) => {
                 <Footer />
             </div>
             {toggle ? null
-                :<div className='flex flex-col justify-center items-center gap-6'>
+                :<div className='flex flex-col justify-center items-center mt-5 gap-5'>
                     <button className='bg-amber-900 text-amber-50 rounded-[0.5rem] px-5 py-2' onClick={handlePlay}>Open</button>
                     <div className='shadow-2xl shadow-amber-950'>
                         <img className='w-[12rem] h-[18rem]' src="images/bapu/bapu2.jpg" alt="bapu" />
                     </div>
-                    <div className='text-amber-950 font-semibold  text-[1.5rem]'>डॉ. संजीव गिरासे</div>
+                    <div className='text-amber-950 font-semibold  text-[1.2rem]'>डॉ. संजीव गिरासे</div>
                 </div>
             }
         </div>
