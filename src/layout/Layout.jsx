@@ -26,7 +26,8 @@ export const Layout = ({ children }) => {
                     <div className='shadow-2xl shadow-amber-950'>
                         <img className='w-[12rem] h-[18rem]' src="images/bapu/bapu2.jpg" alt="bapu" />
                     </div>
-                    <div className='text-amber-950 font-semibold  text-[1.2rem]'>डॉ. संजीव गिरासे</div>
+                    <div className='text-amber-100 font-semibold amita-regular text-[1.2rem] bg-amber-950/75 px-3 
+                    py-1 rounded-[0.2rem]'>डॉ. संजीव गिरासे</div>
                 </div>
             }
         </div>
